@@ -1,4 +1,4 @@
-* {
+/** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,4 +6,21 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Inter', sans-serif;
+  --breakpoint-3xl: 1920px;
+  --color-primary: #646cff ;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-display);
+  }
+  body {
+    background-color: #fcfbfc;
+  }
 }
