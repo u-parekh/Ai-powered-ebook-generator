@@ -28,19 +28,3 @@ export const AuthProvider = ({ children }) => {
 
 export const useAuth = () => useContext(AuthContext);
 
-/*import { useLocation } from "react-router-dom";
-const AuthContext = createContext();
-const AuthProvider = ({children}) => {
-  const isAuthenticated = true; 
-  const loading = false;
-  const location = useLocation();
-    if (loading) {
-      return <div>Loading...</div>;
-    }
-
-    if (!isAuthenticated) {
-        return <Navigate to="/login" state={{ from: location }} replace />;
-    }
-    return children;
-}
-export default AuthProvider;*/
